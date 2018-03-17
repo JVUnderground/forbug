@@ -6,7 +6,7 @@ before_install:
 script:
   - gfortran -O0 main.f90 -o main
 
-  - ./hello
+  - ./main
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
