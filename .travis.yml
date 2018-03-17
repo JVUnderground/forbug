@@ -2,8 +2,7 @@ language: c
 os: osx
 
 before_install:
-  - brew install gcc
-  - brew link --overwrite gcc
+  - port install gcc48
 
 script:
   - gfortran -O0 main.f90 -o main
