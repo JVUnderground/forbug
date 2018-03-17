@@ -2,7 +2,8 @@ language: c
 os: osx
 
 before_install:
-  - port install gcc48
+  - rm '/usr/local/include/c++'
+  - brew install gcc
 
 script:
   - gfortran -O0 main.f90 -o main
