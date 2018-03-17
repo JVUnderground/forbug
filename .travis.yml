@@ -1,7 +1,7 @@
 language: c
-sudo: required
+os: osx
 before_install:
-  - sudo apt-get install gfortran
+  - brew install gcc
 
 script:
   - gfortran -O0 main.f90 -o main
